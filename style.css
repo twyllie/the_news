@@ -3,6 +3,7 @@
   height: auto;
   overflow:auto;
   margin: auto;
+  padding-top: 30px;
   background: #fff;
   border: 1px solid #555;
   text-align: center;
@@ -59,11 +60,13 @@ hr{
 
 }
 #nav_menu{
-  max-width: 100%;
-  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 1px solid #555;
   background: #7CAFBF;
   text-align: center;
-  /*position: fixed;*/ /*I can't quite get this to work, I believe I need to space and position it as if it were in its own body element...*/
 }
 #nav_menu a{
   display: inline-block;
