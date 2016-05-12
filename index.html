@@ -4,11 +4,46 @@
 <meta name="author" content="Important People">
 <link rel="shortcut icon" href="images/news.ico">
 <link rel="stylesheet" href="style.css">
+
+<script>
+  var i = 0;
+  var path = new Array();
+
+  // LIST OF IMAGES
+  path[0] = "images/images/mars_rover150.jpg";
+  path[1] = "images/images/iss_walk150.jpg";
+  path[2] = "images/images/plane_loworbit150.jpg";
+  path[3] = "images/images/seen_from_space150.jpg";
+  path[4] = "images/images/space_com150.jpg";
+  path[5] = "images/images/spacex_launch150.jpg";
+  path[6] = "images/images/space_suit150.jpg";
+
+  function nav_menu(){
+    if(window.innerWidth < 800){
+      document.getElementById("nav_menu").style.display = "none";
+      document.getElementById("nav_button").style.display = "block";
+    }else{
+      document.getElementById("nav_button").style.display = "none";
+      document.getElementById("nav_menu").style.display = "block";
+    }
+  };
+
+  function swapImage(){
+     document.getElementById("adImg").src = path[i];     //sets the initial image, and resets for further passes.
+     if(i < path.length - 1){                         //runs through the image bank, and resets if it hits the top.
+       i++;
+     }else{
+       i = 0;
+     }
+     setTimeout("swapImage()",1000);                  //recalls the function after a set amount of time. In ms
+  };
+     window.onload=swapImage;
+</script>
+
 <title>The News</title>
 
-  <body>
-    <div class="ad">
-    </div>
+  <body onresize="nav_menu()">
+
     <div id="nav_menu">
       <a href="mission.html">Mission</a>
       <a href="sponsors.html">Sponsors</a>
@@ -16,6 +51,14 @@
       <a href="">Something Else</a>
       <a href="">Important Crap</a>
     </div>
+
+    <div id="nav_button">
+    </div>
+
+    <div id="ad">
+      <img id="adImg" src="">
+    </div>
+
   <div class="container">
     <div class="article">
       <h1 class="headline">Something about Trump</h1>

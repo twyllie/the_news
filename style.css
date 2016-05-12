@@ -3,6 +3,7 @@
   height: auto;
   overflow:auto;
   margin: auto;
+  margin-bottom: 90px;
   padding-top: 30px;
   background: #fff;
   border: 1px solid #555;
@@ -56,10 +57,24 @@ hr{
 .story{
 
 }
-.ad{
-
+#ad{
+  width: 100%;
+  height: 84px;
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  border: 1px solid #555;
+  background: #7CAFBE;
+  text-align: center;
+}
+#adImg{
+  width: 150px;
+  height: 84px;
+  margin: 0 auto;
 }
 #nav_menu{
+  display: block;
   width: 100%;
   position: fixed;
   top: 0;
@@ -85,8 +100,14 @@ hr{
   color: #000;
   text-align: center;
 }
-#ad{
-
+#nav_button{
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  border: 1px solid #555;
+  background: #7CAFBF;
 }
 #legel_crap p{
   margin: 0px 20px 15px 20px;
