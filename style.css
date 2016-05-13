@@ -1,3 +1,10 @@
+hr{
+  max-width: 80%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left:auto;
+  margin-right: auto;
+}
 .container{
   max-width: 1200px;
   height: auto;
@@ -8,13 +15,6 @@
   background: #fff;
   border: 1px solid #555;
   text-align: center;
-}
-hr{
-  max-width: 80%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left:auto;
-  margin-right: auto;
 }
 .article{
   max-width: 80%;
@@ -28,8 +28,8 @@ hr{
   padding: 10px 30px;
   background: #eee;
 }
-.article img{
-  float:left;
+.article_img{
+  float: left;
   margin-right: 15px;
   margin-bottom: 15px;
   max-width: 250px;
@@ -68,7 +68,52 @@ hr{
   background: #7CAFBE;
   text-align: center;
 }
-#adImg{
+#adImg0{
+  width: 150px;
+  height: 84px;
+  margin: 0 auto;
+}
+#adImg1{
+  width: 150px;
+  height: 84px;
+  margin: 0 auto;
+}
+#adImg2{
+  width: 150px;
+  height: 84px;
+  margin: 0 auto;
+}
+#adImg3{
+  width: 150px;
+  height: 84px;
+  margin: 0 auto;
+}
+#adImg4{
+  width: 150px;
+  height: 84px;
+  margin: 0 auto;
+}
+#adImg5{
+  width: 150px;
+  height: 84px;
+  margin: 0 auto;
+}
+#adImg6{
+  width: 150px;
+  height: 84px;
+  margin: 0 auto;
+}
+#adImg7{
+  width: 150px;
+  height: 84px;
+  margin: 0 auto;
+}
+#adImg8{
+  width: 150px;
+  height: 84px;
+  margin: 0 auto;
+}
+#adImg9{
   width: 150px;
   height: 84px;
   margin: 0 auto;
@@ -100,7 +145,7 @@ hr{
   color: #000;
   text-align: center;
 }
-#nav_button{
+#nav_menu2{
   display: none;
   width: 100%;
   position: fixed;
